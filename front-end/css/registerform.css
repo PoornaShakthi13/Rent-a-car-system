@@ -1,0 +1,13 @@
+#rBody{
+
+}
+
+#rBody{
+    height: 100vh;
+    width: 100vw;
+    background: url(../assest/register1.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+}
