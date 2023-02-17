@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <title>rent a car system</title>
     <!-- Font Awesome -->
-    <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- Google Fonts -->
-    <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-            rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <!-- MDB -->
-    <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
-            rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet">
+
+<!--    animation-->
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <!--    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+<!--    fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -143,79 +145,167 @@
     </section>
 
 </div>
-<div id="form2">
-    <div style="margin-left: 40px; margin-top: 40px; position: absolute; max-height: 95vh;" class="row gap-5" >
+<div id="form2" class="slider">
+<!--    <div style="margin-left: 40px; margin-top: 40px; position: absolute; max-height: 95vh;" class="row gap-5" >-->
 
-        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card1" >
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>
-            <div class="card-body">
-                <h5 class="card-title">Suzuki Alto</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-light list-group-small">
-                <li class="list-group-item px-4">Cras justo odio</li>
-                <li class="list-group-item px-4">Dapibus ac facilisis in</li>
-                <li class="list-group-item px-4">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
+<!--        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card1" >-->
+<!--            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Suzuki Alto</h5>-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--            </div>-->
+<!--            <ul class="list-group list-group-light list-group-small">-->
+<!--                <li class="list-group-item px-4">Cras justo odio</li>-->
+<!--                <li class="list-group-item px-4">Dapibus ac facilisis in</li>-->
+<!--                <li class="list-group-item px-4">Vestibulum at eros</li>-->
+<!--            </ul>-->
+<!--            <div class="card-body">-->
+<!--                <a href="#" class="card-link">Card link</a>-->
+<!--                <a href="#" class="card-link">Another link</a>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
 
-        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card2">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>
-            <div class="card-body">
-                <h5 class="card-title">Suzuki Wagon R</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-light list-group-small">
-                <li class="list-group-item px-4">Cras justo odio</li>
-                <li class="list-group-item px-4">Dapibus ac facilisis in</li>
-                <li class="list-group-item px-4">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
+<!--        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card2">-->
+<!--            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Suzuki Wagon R</h5>-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--            </div>-->
+<!--            <ul class="list-group list-group-light list-group-small">-->
+<!--                <li class="list-group-item px-4">Cras justo odio</li>-->
+<!--                <li class="list-group-item px-4">Dapibus ac facilisis in</li>-->
+<!--                <li class="list-group-item px-4">Vestibulum at eros</li>-->
+<!--            </ul>-->
+<!--            <div class="card-body">-->
+<!--                <a href="#" class="card-link">Card link</a>-->
+<!--                <a href="#" class="card-link">Another link</a>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card3">
-            <img src="" class="card-img-top" />
-            <div class="card-body">
-                <h5 class="card-title">Toyota Aqua</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-light list-group-small">
-                <li class="list-group-item px-4">Cras justo odio</li>
-                <li class="list-group-item px-4">Dapibus ac facilisis in</li>
-                <li class="list-group-item px-4">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
+<!--        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card3">-->
+<!--            <img src="" class="card-img-top" />-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Toyota Aqua</h5>-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--            </div>-->
+<!--            <ul class="list-group list-group-light list-group-small">-->
+<!--                <li class="list-group-item px-4">Cras justo odio</li>-->
+<!--                <li class="list-group-item px-4">Dapibus ac facilisis in</li>-->
+<!--                <li class="list-group-item px-4">Vestibulum at eros</li>-->
+<!--            </ul>-->
+<!--            <div class="card-body">-->
+<!--                <a href="#" class="card-link">Card link</a>-->
+<!--                <a href="#" class="card-link">Another link</a>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>
-            <div class="card-body">
-                <h5 class="card-title">Toyota Prius</h5>
-                <p class="card-text"></p>
-            </div>
-            <ul class="list-group list-group-light list-group-small">
-                <li class="list-group-item px-4">Cras justo odio</li>
-                <li class="list-group-item px-4">Dapibus ac facilisis in</li>
-                <li class="list-group-item px-4">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+<!--        <div class="card col-4" style="width: 18rem; background-color: #accfff" id="card4">-->
+<!--            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/062.webp" class="card-img-top" alt="Chicago Skyscrapers"/>-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Toyota Prius</h5>-->
+<!--                <p class="card-text"></p>-->
+<!--            </div>-->
+<!--            <ul class="list-group list-group-light list-group-small">-->
+<!--                <li class="list-group-item px-4">Cras justo odio</li>-->
+<!--                <li class="list-group-item px-4">Dapibus ac facilisis in</li>-->
+<!--                <li class="list-group-item px-4">Vestibulum at eros</li>-->
+<!--            </ul>-->
+<!--            <div class="card-body">-->
+<!--                <a href="#" class="card-link">Card link</a>-->
+<!--                <a href="#" class="card-link">Another link</a>-->
+<!--            </div>-->
 
-    </div>
+<!--    </div>-->
+
+
+
+    <span style="--i:1;">
+<!--            <img src="assets/img/basic/case01.PNG">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="assest/alto.webp">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+<!--                    <a href="../assignments/js/SPA/index.html" target="_blank">Check It</a>-->
+                </div>
+            </div>
+        </span>
+
+    <span style="--i:2;">
+<!--            <img src="assets/img/basic/case02.PNG">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+<!--                    <a href="../assignments/js/SPA/index.html" target="_blank">Check It</a>-->
+                </div>
+            </div>
+        </span>
+
+    <span style="--i:3;">
+<!--            <img src="assets/img/basic/case03.jpg">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+                    <a href="" target="_blank">Check It</a>
+                </div>
+            </div>
+        </span>
+
+    <span style="--i:4;">
+<!--            <img src="assets/img/basic/case04.jpg">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+                    <a href="" target="_blank">Check It</a>
+                </div>
+            </div>
+        </span>
+
+    <span style="--i:5;">
+<!--            <img src="assets/img/basic/case05.PNG">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+                    <a href="" target="_blank">Check It</a>
+                </div>
+            </div>
+        </span>
+
+    <span style="--i:6;">
+<!--            <img src="assets/img/basic/case06.PNG">-->
+            <div class="card">
+                <div class="sliderText">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum ipsam modi molestiae
+                        nulla rerum veritatis voluptatem voluptates.</p>
+                    <a href="" target="_blank">Check It</a>
+                </div>
+            </div>
+        </span>
+
+
 
 </div>
 
