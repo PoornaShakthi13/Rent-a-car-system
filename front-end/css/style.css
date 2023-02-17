@@ -38,10 +38,34 @@ body,
     background-image: url("../assest/2ndpage.jpg");
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.sliderbody{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+.card:hover {
+    transform: translateY(-25px) scale(1);
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+
 
 
 
