@@ -16,120 +16,112 @@
 
 <body id="rBody">
 <section id="sec1">
-    <section class="intro">
-        <!--        <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img5.jpg');">-->
-        <div class="mask d-flex align-items-center h-100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
-                        <div class="card1 mask-custom">
-                            <div class="card1-body p-2 text-white" >
+    <section class="vh-100 gradient-custom" style="margin-top: 50px; background: inherit ">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px; background: linear-gradient(rgba(131,179,236,0.8), rgba(85,16,16,0.8)); margin-bottom: 50px">
+                        <div class="card-body p-4 p-md-5" style="font-weight: 800">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5" style="color: #ffffff; margin-left: 20%;font-size: 40px">Registration Form</h3>
+                            <form>
 
-                                <div class="my-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
 
-                                    <h2 class="text-center mb-5">Register Form</h2>
-
-                                    <form>
-                                        <!-- 2 column grid layout with text inputs for the first and last names -->
-                                        <div class="row">
-                                            <div class="col-12 col-md-6 mb-4">
-                                                <div class="form-outline form-black" style="font-weight: 800">
-                                                    <input type="text" id="form3Example1" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Example1">Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 mb-4">
-                                                <div class="form-outline form-black" style="font-weight: 800">
-                                                    <input type="text" id="form3Example2" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Example2">Last name</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12 col-md-12 mb-4">
-                                                <div class="form-outline form-black" style="font-weight: 800">
-                                                    <input type="text" id="form3Example" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="form3Example3">Address</label>
-                                                </div>
-                                            </div>
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">First Name</label>
                                         </div>
 
-                                        <!-- Email input -->
-                                        <div class="form-outline form-black mb-4" style="font-weight: 800">
-                                            <input type="email" id="form3Example3" class="form-control form-control-lg" />
-                                            <label class="form-label" for="form3Example3">Email address</label>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="lastName">Last Name</label>
                                         </div>
 
-                                        <!-- Password input -->
-                                        <div class="form-outline form-white mb-4">
-                                            <input type="password" id="form3Example4" class="form-control form-control-lg" />
-                                            <label class="form-label" for="form3Example4">Password</label>
-                                        </div>
-
-                                        <!-- Checkbox -->
-                                        <div class="form-check d-flex justify-content-center mb-2">
-                                            <input
-                                                    class="form-check-input me-2"
-                                                    type="checkbox"
-                                                    value=""
-                                                    id="form2Example3"
-
-                                            />
-                                            <!--<label class="form-check-label" for="form2Example3">-->
-                                            Driver
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check d-flex justify-content-center mb-2">
-                                            <input
-                                                    class="form-check-input me-2"
-                                                    type="checkbox"
-                                                    value=""
-                                                    id="form2Example4"
-
-                                            />
-                                            <!--<label class="form-check-label" for="form2Example3">-->
-                                            Admin
-                                            </label>
-                                        </div>
-
-                                        <!-- Submit button -->
-                                        <button type="submit" class="btn btn-block mb-2" style="background-color:#3dcadd">Sign in</button>
-
-                                        <button type="submit" class="btn btn-block mb-4" style="background-color:#00ad52">Sign up</button>
-
-                                        <!-- Register buttons -->
-                                        <div class="text-center">
-                                            <p>or sign up with:</p>
-                                            <button type="button" class="btn btn-light btn-floating mx-1">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-light btn-floating mx-1">
-                                                <i class="fab fa-google"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-light btn-floating mx-1">
-                                                <i class="fab fa-twitter"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-light btn-floating mx-1">
-                                                <i class="fab fa-github"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-
+                                    </div>
                                 </div>
 
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                                        <div class="form-outline datepicker w-100">
+                                            <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                            <label for="birthdayDate" class="form-label">Birthday</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                                   value="option1" checked />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                                   value="option2" />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                                   value="option3" />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Email</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+<!--                                <div class="row">-->
+<!--                                    <div class="col-12">-->
+
+<!--                                        <select class="select form-control-lg">-->
+<!--                                            <option value="1" disabled>Choose option</option>-->
+<!--                                            <option value="2">Subject 1</option>-->
+<!--                                            <option value="3">Subject 2</option>-->
+<!--                                            <option value="4">Subject 3</option>-->
+<!--                                        </select>-->
+<!--                                        <label class="form-label select-label">Choose option</label>-->
+
+<!--                                    </div>-->
+<!--                                </div>-->
+
+                                <div class="mt-4 pt-2">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    </div>
+    </section>    </div>
 
 
 </section>
