@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register Form</title>
-    <link href="css/registerform.css" rel="stylesheet">
+    <title>Driver Registration</title>
+    <link href="css/DriverRegi.css">
+
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -13,8 +14,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/>
 </head>
 
+<body>
 
-<body id="rBody">
 <section id="sec1">
     <section class="vh-100 gradient-custom" style="margin-bottom: 10px; background: inherit" id="sec2">
         <div class="container py-5 h-100">
@@ -22,7 +23,7 @@
                 <div class="col-12 col-lg-9 col-xl-7" style="margin-top: -41px">
                     <div class="card shadow-2-strong card-registration" style="border-radius: 15px; background: linear-gradient(rgba(131,179,236,0.8), rgba(85,16,16,0.8)); margin-bottom: 0px;">
                         <div class="card-body p-4 p-md-5" style="font-weight: 800; margin-top: -29px">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5" style="color: #ffffff; margin-left: 15%;font-size: 40px">Customer Registration</h3>
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5" style="color: #ffffff; margin-left: 15%;font-size: 40px">Driver Registration</h3>
                             <form>
 
                                 <div class="row">
@@ -56,6 +57,16 @@
 
                                     </div>
 
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="Driving">Nice or Driving License img</label>
+                                            <input required type="file" id="Driving" class="form-control form-control-lg" />
+
+                                        </div>
+
+                                    </div>
+
 <!--                                    <div class="col-md-6 mb-4">-->
 
 <!--                                        <h6 class="mb-2 pb-1">Gender: </h6>-->
@@ -72,11 +83,11 @@
 <!--                                                   value="option2" />-->
 <!--                                        </div>-->
 
-<!--&lt;!&ndash;                                        <div class="form-check form-check-inline">&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                   value="option3" />&ndash;&gt;-->
-<!--&lt;!&ndash;                                            <label class="form-check-label" for="otherGender">Other</label>&ndash;&gt;-->
-<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                        <div class="form-check form-check-inline">&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                                   value="option3" />&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                            <label class="form-check-label" for="otherGender">Other</label>&ndash;&gt;-->
+<!--                                        &lt;!&ndash;                                        </div>&ndash;&gt;-->
 
 <!--                                    </div>-->
                                 </div>
@@ -118,10 +129,14 @@
                 </div>
             </div>
         </div>
-    </section>    </div>
+        </div>
+    </section>
 
 
 </section>
+
+
+
 
 </body>
 </html>
