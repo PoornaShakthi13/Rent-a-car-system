@@ -188,34 +188,35 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-dark">
-                <h5 class="modal-title">Save New Customer Details</h5>
+                <h5 class="modal-title">Edit Vehicle Details</h5>
                 <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button" ></button>
             </div>
             <div class="modal-body bg-dark">
                 <section>
                     <div class="mb-3">
-                        <label class="form-label" for="txtCustomerID">Customer ID</label>
+                        <label class="form-label" for="txtCustomerID">Vehicle ID</label>
                         <input class="form-control" id="txtCustomerID" type="text">
                     </div>
                     <div class="mb-3 shadow-none">
-                        <label class="form-label" for="txtCustomerName">Customer Name</label>
+                        <label class="form-label" for="txtCustomerName">Vehicle Model</label>
 
                         <input class="form-control" id="txtCustomerName" multiple type="text">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                        <label class="form-label" for="txtCustomerAddress">Vehicle Price</label>
 
                         <input class="form-control" id="txtCustomerAddress" type="text">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="txtCustomerContact">Customer Contact</label>
+                        <label class="form-label" for="txtCustomerContact">Per KM's per day</label>
                         <input class="form-control form-control-sm" id="txtCustomerContact" type="number">
                     </div>
                 </section>
             </div>
             <div class="modal-footer bg-dark">
-                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
-                <button class="btn btn-success" id="btnSaveCustomer" type="button">Save changes</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Delete</button>
+                <button class="btn btn-info" id="btnSaveCustomer" type="button">Save </button>
+                <button class="btn btn-success" id="btnUpdateCustomer" type="button">Update</button>
             </div>
         </div>
     </div>
