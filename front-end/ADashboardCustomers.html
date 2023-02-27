@@ -92,7 +92,7 @@
     <div class="content">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
-            <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+            <a href="#" class="navbar-brand d-flex d-lg-none me-4">
                 <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
             </a>
             <a href="ADashboardCustomers.html" class="sidebar-toggler flex-shrink-0">
@@ -101,6 +101,11 @@
             <form class="d-none d-md-flex ms-4">
                 <input class="form-control bg-dark border-0" type="search" placeholder="Search">
             </form>
+
+            <div style="margin-left: 90px">
+                <a href="#"><button type="button" class="btn btn-outline-light m-2" style="font-weight: 800;" data-bs-target="#EditCustomer" data-bs-toggle="modal">Edit Customer</button></a>
+            </div>
+
             <div class="navbar-nav align-items-center ms-auto">
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -191,7 +196,7 @@
                             <a href="">Show All</a>
                         </div>
                         <div class="d-flex align-items-center border-bottom py-3">
-                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+<!--                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">-->
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -201,7 +206,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center border-bottom py-3">
-                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+<!--                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">-->
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -211,7 +216,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center border-bottom py-3">
-                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+<!--                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">-->
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -221,7 +226,7 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center pt-3">
-                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+<!--                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">-->
                             <div class="w-100 ms-3">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h6 class="mb-0">Jhon Doe</h6>
@@ -275,6 +280,55 @@
 
 <!--table end-->
 
+        <!--model start-->
+        <div aria-hidden="true" aria-labelledby="saveDriverLabel" class="modal fade" id="EditCustomer" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title">Edit Driver Information</h5>
+                        <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button" ></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <section>
+                            <div class="mb-3">
+                                <label class="form-label" for="txtCustomerId">Customer ID</label>
+                                <input class="form-control" id="txtCustomerId" type="text">
+                            </div>
+                            <div class="mb-3 shadow-none">
+                                <label class="form-label" for="txtCustomerName">Customer Name</label>
+                                <input class="form-control" id="txtCustomerName" multiple type="text">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                                <input class="form-control" id="txtCustomerAddress" type="text">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="txtCustomerNumber">Customer Mobile Number</label>
+                                <input class="form-control" id="txtCustomerNumber" type="tel">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="txtCustomerEmail">Customer Email</label>
+                                <input class="form-control form-control-sm" id="txtCustomerEmail" type="text">
+                            </div>
+                            <!--                    <select class="form-select" aria-label="Default select example">-->
+                            <!--                        <option selected>Fuel Type</option>-->
+                            <!--                        <option value="1">Petrol</option>-->
+                            <!--                        <option value="2">Diesel</option>-->
+                            <!--                    </select>-->
+                        </section>
+                    </div>            <div class="modal-footer bg-dark">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Delete</button>
+                    <button class="btn btn-info" id="btnSaveCustomer" type="button">Save</button>
+                    <button class="btn btn-success" id="btnUpdateCustomer" type="button">Update</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--model end-->
+
+
         <!-- Footer Start -->
         <div class="container-fluid pt-4 px-4">
             <div class="bg-secondary rounded-top p-4">
@@ -293,6 +347,8 @@
         <!-- Footer End -->
     </div>
     <!-- Content End -->
+
+
 
 
     <!-- Back to Top -->
