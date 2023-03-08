@@ -73,8 +73,8 @@
                                             <div class="row">
                                                 <div class="col-12 col-md-12 mb-4">
                                                     <div class="form-outline form-white">
-                                                        <input type="text" id="form3Example1" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="form3Example1">Name</label>
+                                                        <input type="text" id="txtSignName" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="txtSignName">Name</label>
                                                     </div>
                                                 </div>
 <!--                                                <div class="col-12 col-md-6 mb-4">-->
@@ -87,14 +87,14 @@
 
                                             <!-- Email input -->
                                             <div class="form-outline form-white mb-4">
-                                                <input type="email" id="form3Example3" class="form-control form-control-lg" />
-                                                <label class="form-label" for="form3Example3">Email address</label>
+                                                <input type="email" id="txtSignMail" class="form-control form-control-lg" />
+                                                <label class="form-label" for="txtSignMail">Email address</label>
                                             </div>
 
                                             <!-- Password input -->
                                             <div class="form-outline form-white mb-4">
-                                                <input type="password" id="form3Example4" class="form-control form-control-lg" />
-                                                <label class="form-label" for="form3Example4">Password</label>
+                                                <input type="password" id="txtSignPassword" class="form-control form-control-lg" />
+                                                <label class="form-label" for="txtSignPassword">Password</label>
                                             </div>
 
                                             <!-- Checkbox -->
@@ -102,35 +102,40 @@
 
                                             <!-- Submit button -->
 
-                                            <a href="Admin%20DashBoard.html" type="button" class="btn btn-block mb-2" style="background-color:#3dcadd">Sign in</a>
+                                            <a href="Admin%20DashBoard.html" type="button" class="btn btn-block mb-2" style="background-color:#3dcadd" id="signin">Sign in</a>
                                             <p class="text-center" style="margin-top: 5px">or sign up with:</p>
-                                            <div class="form-check d-flex justify-content-center mb-2">
-                                                <input
-                                                        class="form-check-input me-2"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="form2Example3"
 
-                                                />
-                                                <!--                                                <label class="form-check-label" for="form2Example3">-->
-                                                Driver or Admin
-                                                </label>
-                                            </div>
+                                            <a href="CustomerRegisterform.html" type="button" class="btn btn-block mb-2" style="background-color:#85b03e" id="customersign">As Customer</a>
+                                            <a href="DriverRegistration.html" type="button" class="btn btn-block mb-2" style="background-color:#b03f3d" id="driversign">As Driver</a>
+                                            <a href="AdminRegistration.html" type="button" class="btn btn-block mb-2" style="background-color:#b0a122" id="adminsignin">As Admin</a>
 
-                                            <div class="form-check d-flex justify-content-center mb-2">
-                                                <input
-                                                        class="form-check-input me-2"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="form2Example4"
+<!--                                            <div class="form-check d-flex justify-content-center mb-2">-->
+<!--                                                <input-->
+<!--                                                        class="form-check-input me-2"-->
+<!--                                                        type="checkbox"-->
+<!--                                                        value=""-->
+<!--                                                        id="CheckDriver"-->
 
-                                                />
-                                                <!--                                                <label class="form-check-label" for="form2Example3">-->
-                                                Customer
-                                                </label>
-                                            </div>
+<!--                                                />-->
+<!--                                                &lt;!&ndash;                                                <label class="form-check-label" for="form2Example3">&ndash;&gt;-->
+<!--                                                Driver or Admin-->
+<!--                                                </label>-->
+<!--                                            </div>-->
 
-                                            <a href="AdminRegistration.html" type="button" class="btn btn-block mb-4" style="background-color:#00ad52">Sign up</a>
+<!--                                            <div class="form-check d-flex justify-content-center mb-2">-->
+<!--                                                <input-->
+<!--                                                        class="form-check-input me-2"-->
+<!--                                                        type="checkbox"-->
+<!--                                                        value=""-->
+<!--                                                        id="CheckCustomer"-->
+
+<!--                                                />-->
+<!--                                                &lt;!&ndash;                                                <label class="form-check-label" for="form2Example3">&ndash;&gt;-->
+<!--                                                Customer-->
+<!--                                                </label>-->
+<!--                                            </div>-->
+
+<!--                                            <a href="AdminRegistration.html" type="button" class="btn btn-block mb-4" style="background-color:#00ad52" id="signup">Sign up</a>-->
 
                                             <!-- Register buttons -->
                                             <div class="text-center">
@@ -350,9 +355,13 @@
 
 
 <!-- MDB -->
+
+<script src="lib/jquery-3.6.1.min.js"></script>
 <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
 ></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
