@@ -17,8 +17,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableTransactionManagement//aspect (Manage all my transactions automatically using transaction manager)
-@EnableJpaRepositories(basePackageClasses = {})//link dao classes
+@EnableTransactionManagement
+@EnableJpaRepositories(basePackages = {"lk.ijse.spring.repo"})
 public class JPAConfig {
 
     @Bean

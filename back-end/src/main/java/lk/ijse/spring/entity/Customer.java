@@ -22,4 +22,5 @@ public class Customer {
     private String birthday;
     private String email;
     private String mobile;
+    private String password;
 }

@@ -24,7 +24,7 @@ public class CustomerController {
         return new ResponseUtil("200",dto.getId()+"added",null);
 
     }
-
+    @GetMapping
     public ResponseUtil getAllCustomers(){
         ArrayList<CustomerDTO> allcustomers= customerService.getAllCustomer();
         return new ResponseUtil("200","success",allcustomers);

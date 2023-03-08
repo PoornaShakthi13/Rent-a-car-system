@@ -17,6 +17,7 @@ public class CustomerDTO {
     private String birthday;
     private String email;
     private String mobile;
+    private String password;
 
     public int getId() {
         return id;
@@ -74,6 +75,5 @@ public class CustomerDTO {
         this.password = password;
     }
 
-    private String password;
 
 }
