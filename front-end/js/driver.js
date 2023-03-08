@@ -48,8 +48,8 @@ function saveDriver() {
         birthday:birthday,
         img:img,
         email:email,
-        mobile:phonenumber,
-        password:password
+        phonenumber:phonenumber,
+        password:password,
 
     }
 

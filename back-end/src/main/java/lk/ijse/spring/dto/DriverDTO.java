@@ -13,7 +13,7 @@ import lombok.ToString;
 public class DriverDTO {
     private int id;
     private String firstname;
-    private String lasttname;
+    private String lastname;
     private String birthday;
     private String img;
     private String email;
@@ -37,11 +37,11 @@ public class DriverDTO {
     }
 
     public String getLasttname() {
-        return lasttname;
+        return lastname;
     }
 
-    public void setLasttname(String lasttname) {
-        this.lasttname = lasttname;
+    public void setLastname(String lasttname) {
+        this.lastname = lasttname;
     }
 
     public String getBirthday() {

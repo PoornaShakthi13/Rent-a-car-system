@@ -18,9 +18,10 @@ public class Driver {
     @Id
     private int id;
     private String firstname;
-    private String lasttname;
+    private String lastname;
     private String birthday;
     private String img;
     private String email;
     private String phonenumber;
+    private String password;
 }
