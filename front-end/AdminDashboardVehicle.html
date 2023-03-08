@@ -292,13 +292,13 @@
                         <input class="form-control" id="txtVehicleNumber" type="text">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="txtVehicleMileage">Vehicle Price For 250Km</label>
-                        <input class="form-control form-control-sm" id="txtVehicleMileage" type="number">
+                        <label class="form-label" for="vehiclePrice">Vehicle Price For 250Km</label>
+                        <input class="form-control form-control-sm" id="vehiclePrice" type="text">
                     </div>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Fuel Type</option>
-                        <option value="1">Petrol</option>
-                        <option value="2">Diesel</option>
+                    <select class="form-select" aria-label="Default select example" id="fuelType">
+<!--                        <option selected>Fuel Type</option>-->
+                        <option >Petrol</option>
+                        <option >Diesel</option>
                     </select>
                 </section>
             </div>            <div class="modal-footer bg-dark">
@@ -335,4 +335,7 @@
 
 <script src="lib/main.js"></script>
 <script src="lib/css/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="lib/jquery-3.6.1.min.js"></script>
+<script src="js/vehicle.js"></script>
 </body>
